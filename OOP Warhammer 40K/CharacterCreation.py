@@ -37,14 +37,17 @@ def main():
 
     print(Character)
     print("Movement is " + str(Character.Movement['run']))
-    print( "\nFate " + str(Character.Fate))
+    print("\nFate " + str(Character.Fate))
     print("\nAG " + str(Character.Characteristics['AG']))
     print("\nHp " + str(Character.HP))
 
 
 if __name__ == "__main__":
     test = Blood_Angels('John')
-##    print( test.Characteristics['WS'], test.name, test.Chapter)
-##    print(test)
+    print( test.Characteristics['WS'], test.Name, test.Chapter, test)
+    print("\n", test.Skills['Basic'])
+    print("\n", test.Skills['Trained'])
+    print("\n", test.Skills['+10%'])
+##    LOOKHEREprint(test)
 ##    print(test.Characteristics)
-    main()
+    #main()
