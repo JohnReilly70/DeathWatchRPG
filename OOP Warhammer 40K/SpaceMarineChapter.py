@@ -41,13 +41,17 @@ class Space_Marine():
     def SkillSetUp(self):
 
         SpaceMarineSkills = {}
+        
         SpaceMarineSkills.update({'Basic':['Barter(Fel)','Carous(T)','Charm(Fel)','Commander(Fel)',
-                            'Contortionist(Ag)','Deceive(Fel)','Disguise(Fel)','Dodge(Ag)','Evaluate(**Int)','Gamble(Int)','Inquiry(Fel)','Intimidate(S)','Logic(Int)','Scrutiny(Per)','Search(Per)','Swim(S)']})
+                            'Contortionist(Ag)','Deceive(Fel)','Disguise(Fel)','Dodge(Ag)','Evaluate(**Int)',
+                            'Gamble(Int)','Inquiry(Fel)','Intimidate(S)','Logic(Int)','Scrutiny(Per)','Search(Per)',
+                            'Swim(S)']})
+                            
         SpaceMarineSkills.update({'Trained':['Awareness(Per)',{'Ciphers(Int)': 'Chapter Runes'},'Climb(S)',
-        {'Common Lore(Int)':['Adeptus Astartes','DeathWatch','Imperium','War']},
-        'Concealment(Ag)',{'Drive(Ag)':['Ground Vehicles']},
-        {'Forbidden Lore(Int)':['Xenos']},'Literacy(Int)',
-        {'Speaking Language(Int)':['High Gothic','Low Gothic']},{'Tactics(Int)':['']},'Tracking(Int)']})
+                                {'Common Lore(Int)':['Adeptus Astartes','DeathWatch','Imperium','War']},
+                                'Concealment(Ag)',{'Drive(Ag)':['Ground Vehicles']},
+                                {'Forbidden Lore(Int)':['Xenos']},'Literacy(Int)',
+                                {'Speaking Language(Int)':['High Gothic','Low Gothic']},{'Tactics(Int)':['']},'Tracking(Int)']})
 
         SpaceMarineSkills.update({'+10%':[]})
 
