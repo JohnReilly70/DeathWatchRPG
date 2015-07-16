@@ -73,11 +73,12 @@ class Space_Marine():
         SpaceMarineTalents = ['Ambidextrous', 'Astartes Weapon Training', 'Bulging Biceps', {'HeightenedSenses': ['Hearing', 'Sight']},
         'Killing Strike', 'Nerves of Steel', 'Quick Draw', {'Resistance': ['Psychic Powers']}, 'True Grit', 'Unarmed Master',
         {'UnnaturalStrength': 2}, {'UnnaturalToughness': 2}]
-
+        
+        self.TalentTraits = SpaceMarineTalents
+        
         if self.Chapter == "Space Wolves":
-          self.TalentTraits['HeightenedSenses'] = SpaceMarineTalents['HeightenedSenses'].extend(['Smell'])
-        else:
-          self.TalentTraits = SpaceMarineTalents
+          self.TalentTraits['HeightenedSenses'].extend(['Smell'])
+
 
 
 
