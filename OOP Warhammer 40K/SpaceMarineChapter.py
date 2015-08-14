@@ -128,15 +128,16 @@ class Space_Marine():
         ReRoll.upper()
         if ReRoll == 'NONE' or ReRoll == '':
             print("No Re-Roll Selected")
-        # NEED TO MAKE A CHECK THAT IT IS A LEGIT CHARACTERISTIC ELSE GO THROUGH LOOP AGAIN
-        elif ReRoll ==
-
-
-
-
-
-
-
+        else:
+            #DOESN'T WORK NEED BETTER SOLUTION
+            try:
+                print("Entered Try")
+                CharacteristicRoll = random.randint(1,10) + random.randint(1,10)
+                print(self.Characteristics[str(ReRoll)])
+                self.Characteristics[ReRoll] = 30 + CharacteristicRoll
+                print(self.Characteristics[str(ReRoll)])
+            except:
+                print("Not a Valid Char so I've assumed you mean't None")
 
 
 class Blood_Angels (Space_Marine):
